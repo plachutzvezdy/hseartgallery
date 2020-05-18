@@ -1,0 +1,40 @@
+body {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 40px;
+    width: 400px;
+  }
+
+  .cover {
+    margin: 150px 0;
+  }
+
+//   .imagecover {
+//
+//     width: 922px;
+//     height: 589px;
+//     float: right;
+//     display: flex;
+//     align-items: right;
+//     justify-content: right;
+//     overflow: hidden;
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  width: 407px;
+
+  a {
+    margin-right: 38px;
+  }
+}
