@@ -1,41 +1,46 @@
 .menubar {
+  width: 100%;
   background: white;
-  text-emphasis-color: black;
   position: fixed;
   z-index: 5;
   top: 0;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
+  // display: flex;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.04);
-  width: 100vw;
-  height: 65px;
+  height: 68px;
+  // justify-content: space-between;
+  // display: inline-block;
+}
 
+.logo img {
+  float: left;
+  padding: 10px 330px 10px 20px;
+  width: 89px;
+  height: 45px;
+}
 
-  * {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-  }
-
-  a {
-    color: black;
-    font-family: Proxima Nova;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 10px;
-
-    &:hover {
-      color: #737373;
+.menu {
+  // align-items: center;
+  ul {
+    list-style: none;
+    display: inline;
+    li {
+      flex-direction: column;
+      float: left;
+      margin: 23px 23px;
+      a {
+        color: #737373;
+        font-family: ProximaNovaSemi, sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        text-decoration: none;
+        margin-right: 50px;
+        position: relative;
+        display: block;
+       }
+       a:hover {
+         color: black;
+         transition: color .4s;
+      }
     }
-  }
-
-  .logo {
-    padding: 4px 555px 0 6px;
-  }
-
-  a + a {
-    margin-left: 75px;
   }
 }
